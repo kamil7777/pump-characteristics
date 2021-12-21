@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!-- служебная часть -->
+
+<head>
+  <!-- заголовок страницы -->
+  <title>Расчет характеристик центробежного насоса</title>
+  <!-- настраиваем служебную информацию для браузеров, можно пока не вникать -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- подключаем функцию, которая хеширует строку -->
+  <link rel="stylesheet" href="style\Chart.min.css">
+  <link rel="stylesheet" href="style\style.css">
+  
+  <!-- закрываем служебную часть страницы -->
+</head>
+
+<body>
+  <!-- ставим всё содержимое в один блок по центру  -->
+  <div class="container" margin: auto;>
+    <!-- заголовок страницы -->
+    <h2 class="todo__caption">Расчет характеристик центробежного насоса</h2>
+    <!--делаем отступ -->
+    
+    <br>
+    <!-- добавляем кнопку ссылку на сайт перечень насосов ЦНС -->
+    <a href="http://electronpo.ru/nasosi_cnsg" target="_blank"><button class="but">Номинальные характеристики насосов</button></a>
+
+    <!--делаем отступ -->
+    <br>
+    <!-- задаём поле ввода для расхода при номинальной частоте вращения насоса -->
+    <input type="text" id="rashod1" size="60" placeholder="Вставьте расход при номинальной частоте вращения насоса, м3/ч">
+    <!--делаем отступ -->
+    <br>
+    <!-- задаём поле ввода для напора при номинальной частоте вращения насоса -->
+    <input type="text" id="napor1" size="60" placeholder="Вставьте напор при номинальной частоте вращения насоса, м">
+    <!--делаем отступ -->
+    <br>
+    <!-- задаём поле ввода для мощности при номинальной частоте вращения насоса -->
+    <input type="text" id="power1" size="70" placeholder="Вставьте мощность при номинальной частоте вращения насоса, кВт">
+    <!--делаем отступ -->
+    <br>
+    <!-- задаём поле ввода номинальной частоты вращения насоса, об/мин -->
+    <input type="text" id="rotation1" size="50" placeholder="Вставьте номинальную частоту вращения насоса, об/мин">
+    <!--делаем отступ -->
+    <br>
+    <!-- задаём поле ввода номинальной частоты вращения насоса, об/мин -->
+    <input type="text" id="rotation2" size="50" placeholder="Вставьте заданную частоту вращения насоса, об/мин">
+    <!--делаем отступ -->
+    <br>
+    <!-- вставляем кнопку, которая запускает расчет и настраиваем отступы -->
+    <button class="but"  onclick="generate()">Расчет</button>
+    <!--выводим сгенерированный пароль -->
+    <p>Ваш расход, м3/ч:</p>
+    <div id="rash_text" style="font-weight: bold"></div>
+    <!--делаем отступ -->
+    <br>
+    <p>Ваш напор, м:</p>
+    <div id="nap_text" style="font-weight: bold"></div>
+    <!--делаем отступ -->
+    <br>
+    <p>Ваша мощность, кВт:</p>
+    <div id="pow_text" style="font-weight: bold"></div>
+    <!--делаем отступ -->
+    <br>
+    <canvas id="c1" width="400" height="-200"></canvas> 
+    <br>
+    <button class="but"  onclick="context.clearRect(0, 0, 400, 200)">Сброс графика</button>
+    </div>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script src="scripts\Chart.min.js"></script>
+    <script src="scripts\scripts.js"></script>
+    
+    <!--<canvas id="myChart"></canvas>-->
+    
+</body>
+</html>
