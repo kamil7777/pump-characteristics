@@ -5,12 +5,11 @@
 <head>
     <!-- заголовок страницы -->
     <title>Расчет характеристик центробежного насоса</title>
-    <!-- настраиваем служебную информацию для браузеров, можно пока не вникать -->
+    <!-- настраиваем служебную информацию для браузеров-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- подключаем функцию, которая хеширует строку -->
-    <link rel="stylesheet" href="style\Chart.min.css">
+    <!-- подключаем css -->
     <link rel="stylesheet" href="style\style.css">
 
 
@@ -52,7 +51,7 @@
         <br>
         <!-- вставляем кнопку, которая запускает расчет и настраиваем отступы -->
         <button class="but" onclick="generate()">Расчет</button>
-        <!--выводим сгенерированный пароль -->
+        <!--выводим расчитанный расход, напор, мощность -->
         <p>Ваш расход, м3/ч:</p>
         <div id="rash_text" style="font-weight: bold"></div>
         <!--делаем отступ -->
@@ -70,12 +69,7 @@
         <button class="but" onclick="context.clearRect(0, 0, 400, 200)">Сброс графика</button>
     </div>
     <br>
-    <canvas id="myChart" width="400" height="200"></canvas>
-    <script src="scripts\Chart.min.js"></script>
-
     <script type="text/javascript" src="scripts\scripts.js"></script>
-    <!--<canvas id="myChart"></canvas>-->
-
 </body>
 
 </html>
