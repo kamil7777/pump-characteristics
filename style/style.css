@@ -1,42 +1,46 @@
    /* задаём CSS-стили прямо здесь же, чтобы всё было в одном файле */
-    /*задаём общие параметры для всей страницы: шрифт и отступы*/
-    body {
-        text-align: center;
-        margin: 10;
-        font-family: Verdana, Arial, sans-serif;
-        font-size: 16px;
-        background-image: -webkit-linear-gradient(#336666, #66cccc);
-        background-size: 100%;
-    }
-          /* настраиваем внешний вид полей ввода*/
-    input {
-        display: inline;
-        margin: 20px auto;
-        border: 2px solid rgba(129, 128, 128, 0.493);
-        border-radius: 10px;
-        padding: 10px 20px;
-        font-family: Verdana, Arial, sans-serif;
-        color: #336666;
-        font-size: 16px;
-    }
-      
-    .container {
-        border: 2px solid rgb(8, 8, 8);
-        padding: 10px 20px;
-        font-family: Verdana, Arial, sans-serif;
-        font-size: 16px;
-    }
-    .but {
-        font-size: 100%;
-        padding:5px 10px 10px 10px;
-        border-radius: 10px;
-        box-shadow: 2px 2px rgb(248, 5, 5);
-      
-    }
-    #c1 {
-        width: 400px;
-        height: 200px;
-        border: 3px solid black;
-        /*margin: 100px;*/
-        background-image: url(setka.png);
-    }
+   /*задаём общие параметры для всей страницы: шрифт и отступы*/
+   
+   body {
+       text-align: center;
+       margin: 10;
+       font-family: Verdana, Arial, sans-serif;
+       font-size: 16px;
+       background-image: -webkit-linear-gradient(#336666, #66cccc);
+       background-size: 100%;
+   }
+   /* настраиваем внешний вид полей ввода*/
+   
+   input {
+       display: inline;
+       margin: 20px auto;
+       border: 2px solid rgba(129, 128, 128, 0.493);
+       border-radius: 10px;
+       padding: 10px 20px;
+       font-family: Verdana, Arial, sans-serif;
+       color: #336666;
+       font-size: 16px;
+       float: left;
+   }
+   
+   .container {
+       border: 2px solid rgb(8, 8, 8);
+       padding: 10px 20px;
+       font-family: Verdana, Arial, sans-serif;
+       font-size: 16px;
+   }
+   
+   .but {
+       font-size: 100%;
+       padding: 5px 10px 10px 10px;
+       border-radius: 10px;
+       box-shadow: 2px 2px rgb(248, 5, 5);
+   }
+   
+   #c1 {
+       width: 400px;
+       height: 200px;
+       border: 3px solid black;
+       /*margin: 100px;*/
+       background-image: url(setka.png);
+   }
