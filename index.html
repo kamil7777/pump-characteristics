@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <!-- служебная часть -->
 
 <head>
@@ -10,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- подключаем css -->
-    <link rel="stylesheet" href="style\style.css">
+    <link rel="stylesheet" href="style/style.css">
 
 
     <!-- закрываем служебную часть страницы -->
@@ -22,11 +23,11 @@
         <!-- заголовок страницы -->
         <h2 class="todo__caption">Расчет характеристик центробежного насоса</h2>
         <!--делаем отступ -->
-
         <br>
         <!-- добавляем кнопку ссылку на сайт перечень насосов ЦНС -->
-        <a href="http://electronpo.ru/nasosi_cnsg" target="_blank"><button class="but">Номинальные характеристики насосов</button></a>
-
+        <form action="http://electronpo.ru/nasosi_cnsg" target="_blank">
+            <button class="but">Номинальные характеристики насосов</button>
+        </form>
         <!--делаем отступ -->
         <br>
         <!-- задаём поле ввода для расхода при номинальной частоте вращения насоса -->
@@ -41,7 +42,7 @@
         <br>
         <!-- задаём поле ввода для мощности при номинальной частоте вращения насоса -->
         <p>Вставьте мощность при номинальной частоте вращения насоса, кВт:</p>
-        <input type="text" id="power1" size="50%">
+        <input type="text" id="power1">
         <!--делаем отступ -->
         <br>
         <!-- задаём поле ввода номинальной частоты вращения насоса, об/мин -->
@@ -51,7 +52,7 @@
         <br>
         <!-- задаём поле ввода номинальной частоты вращения насоса, об/мин -->
         <p>Вставьте заданную частоту вращения насоса, об/мин: </p>
-        <input type="text" id="rotation2" size="50%">
+        <input type="text" id="rotation2">
         <!--делаем отступ -->
         <br>
         <!-- вставляем кнопку, которая запускает расчет и настраиваем отступы -->
@@ -74,7 +75,7 @@
         <button class="but" onclick="context.clearRect(0, 0, 400, 200)">Сброс графика</button>
     </div>
     <br>
-    <script type="text/javascript" src="scripts\scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
