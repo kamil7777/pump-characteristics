@@ -34,4 +34,3 @@
         context.lineTo(rashod2, (5 * power2));
         context.stroke();
     }
-    });
