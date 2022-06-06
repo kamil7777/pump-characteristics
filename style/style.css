@@ -67,7 +67,10 @@
    .but:active {
        color: rgba(187, 17, 17, 0.829)
    }
-   
+   .push-btn {
+      box-shadow: 1px 1px rgb(248, 5, 5);
+      transform: scale(0.95);
+   }
    #c1 {
        width: 400px;
        height: 200px;
