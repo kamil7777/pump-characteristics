@@ -55,21 +55,28 @@
        height: 40px;
        width: auto;
        border-radius: 10px;
-       box-shadow: 2px 2px rgb(248, 5, 5);
+       box-shadow: 1px 1px 2px 2px rgb(0, 0, 0);
        cursor: pointer;
        font-size: 12px;
        font-weight: bold;
        padding: 10px;
+       border: none;
    }
    
-   .but:hover,
-   .but:focus,
+    /* .but:hover {
+        box-shadow: 1.5px 1.5px 3px 3px  rgb(0, 0, 0);
+       /* box-shadow: 3px 3px rgb(248, 5, 5); 
+       transform: scale(1.1)
+   }*/
    .but:active {
-       color: rgba(187, 17, 17, 0.829)
-   }
+    box-shadow: 0.5px 0.5px 1px 1px  rgb(0, 0, 0);
+   /* box-shadow: 3px 3px rgb(248, 5, 5); */
+    transform: scale(0.98);
+} 
+
    .push-btn {
-      box-shadow: 1px 1px rgb(248, 5, 5);
-      transform: scale(0.95);
+      box-shadow: 1px 1px rgb(0, 0, 0);
+      transform: scale(0.97);
    }
    #c1 {
        width: 400px;
